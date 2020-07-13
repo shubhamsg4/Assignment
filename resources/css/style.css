@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+    
+.flexrow {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; 
+    padding:0 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#888;
+} 
+
+.long-copy {
+    line-height: 145%;
+    width: 100%;
+    font-size: 16px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color:black;
+
+}
+
+/* ----- HEADINGS ----- */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h1 {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    color: black;
+    font-size: 160%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 150%;
+    word-spacing: 2px;
+    text-align: left;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color:black
+}
+
+h3 {
+    font-size: 100%;
+    margin-bottom: 15px;
+    word-spacing: 2px;
+    text-align: left;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color:black
+}
+
+h4 {
+    font-size: 80%;
+    word-spacing: 2px;
+    text-align: left;
+    color:white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom:10px;
+}
+
+h5{
+    font-size: 60%;
+    word-spacing: 2px;
+    text-align: center;
+    color:black;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top:-10px;
+    
+}
+
+h2:before {
+    display: block;
+    height: 2px;
+    text-align: left;
+    background-color: red;
+    content: " ";
+    width: 100px;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+p{
+    font-weight: 500;
+    font-size: 65%;
+    color: black;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+.header-background {
+    width: 100%;
+    background-image: url(img/home-screen.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 117px);
+    background-attachment: fixed;
+}
+
+.logo {
+    height: 45px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.location {
+    margin-top: 25px;
+    float: left;
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right:auto;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+}
+
+
+.main-nav {
+    float:right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+.main-nav  a{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+}
+
+
+li {
+  flex-basis: calc(50% - 20px);
+  padding-bottom: 10px;
+}
+
+.check-price-section{
+    background-color: white;
+    margin-top:70px;
+    margin-right:30px;
+    width:30%;
+    height:auto;
+    float:right;
+    padding:30px;
+
+}
+
+.enter-data {
+	padding: 10px;
+	font-size: 100%;
+	font-weight: 300;
+    text-align: left;
+    letter-spacing: 1px;
+    word-spacing:2px;
+	color: #747474;
+    display: flex;
+    margin-bottom:8px;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 2px;
+	border: 1px solid rgb(155, 155, 155);
+}
+
+#check-price{
+    background-color: red;
+    padding:10px;
+    color:white;
+    font-size: 100%;
+    word-spacing: 2px;
+    text-align: left;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.new-nav{
+    padding:0px 8px;
+    background-color: #696969;
+
+}
+.new-button
+{
+ padding: 5px;
+ letter-spacing: 1px;
+ font-size:12px;
+ margin-right:20px;
+ margin-top: 8px;
+ margin-left:-130px;
+}
+
+.black{
+    color:black;
+}
+
+.green{
+    color:green;
+}
+
+.background-color-green{
+    background-color: #2E8B57;
+    color:white;
+    margin-left:20px;
+    padding:5px;
+    margin-right: -120px;
+
+}
+
+.red{
+    color:red;
+    padding:5px;
+    font-size: 60%;
+    font-weight: 400;
+}
+
+.down-arrow{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.background-color-red{
+    background-color: red;
+}
+.center{
+    margin-left:10px;
+    text-align: center;
+}
+
+
+
+.rating{
+    width:40%;
+    height: auto;
+    justify-content: space-between;
+    flex:1;
+    padding:20px;
+}
+
+.customers{
+    flex:1;
+    padding:20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.left-header{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right-header{
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* ----------------------------------------------- */
+/* SECTION */
+/* ----------------------------------------------- */
+
+
+.section-features{
+    max-width: 60%;
+    margin-left: 75px;
+    margin-right: 20px;
+}
+
+.service{
+    border-radius: 2px;
+	background-color: rgba(234, 234, 234, 0.56);
+	display: flex;
+	flex-direction: column;
+    padding: 18px 16px 20px;
+    font-size: 70%;
+    text-align: center;
+    color:black;
+    justify-content: center;
+	max-width: 140px;
+	min-width: 140px;
+	box-sizing: border-box;
+	margin-top: 18px;
+	margin-right: 18px;
+    min-height: 115px;
+    height: 130px;
+   
+    
+}
+
+.center-service{
+ justify-self: center;
+text-decoration: none;
+text-align: center;
+}
+
+.car-logo{
+    padding:18px 32px 32px;
+    justify-content: center;
+	max-width: 140px;
+	min-width: 140px;
+	margin-top: 18px;
+	margin-right: 18px;
+    min-height: 115px;
+    margin-bottom:20px;
+    height: 130px;
+
+}
+
+.horizontal-flex{
+     display: flex;
+    flex-flow: row wrap;
+}
+
+.vertical-flex{
+     display: flex;
+    flex-direction: column;
+}
+
+.requirement{
+    background-color: #f6f6f6;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right: 8px;
+    width:400px;
+    min-width: 400px;
+    max-width: 400px;
+    height:140px;
+    min-height: 120px;
+    padding:16px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    
+}
+
+.mobilenumber{
+    background-color: black;
+    width:200px;
+    font-size: 80%;
+    height:40px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+   
+}
+.mnumber{
+    margin-left: 10px;
+    color: white;
+}
+
+.gomechanic-logo{
+    justify-content: center;
+	max-width: 300px;
+	min-width: 300px;
+    min-height: 115px;
+    height:140px;
+    box-sizing: border-box;
+}
+
+.unordered-list{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    font-size:70%;
+    margin: 15px;
+
+}
+
+.service-offered{
+    background-color: #f6f6f6;
+    padding:20px;
+}
+
+.payment-option{
+    display:flex;
+    height: auto;
+    flex-flow: row wrap;
+    margin-right:50px;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.number{
+    padding: 10px 15px;
+	font-size: 22px;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.05;
+	letter-spacing: 1px;
+	text-align: left;
+    color: rgb(40, 40, 40);
+    background-color: #f1f1f1;
+}
+
+.vertical-line{
+	width: 2px;
+    height: 100%;
+    background-color: #f1f1f1;
+    margin-top:-30px;
+}
+
+.vertical-line1{
+    width: 2px;
+    margin-top:20px;
+    height: 70%;
+    background-color: #555;
+}
+
+.gomechanic-work{
+    width:100%;
+    height:150px;
+}
+
+.number-with-line{
+    display: flex;
+    flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-right: 45px;
+}
+
+.breakdown{
+    width:50%;
+}
+
+.breakdown1{
+    width:55%
+}
+
+.gomechanic-benefits{
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-gap:20px 20px;
+
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\22C1';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+content: "\22C0";
+  
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:#f6f6f6;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom:5px;
+}
+
+.app-link{
+    margin-top: 150px;
+}
+
+.logo-images{
+    padding: 5px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+/* ----------------------------------------------- */
+/* Footer */
+/* ----------------------------------------------- */
+
+.footer-features{
+    width: 100%;
+    height:auto;
+    background-color: #071c2c;
+    padding: 30px;
+    
+}
+
+.footer-section{
+    color:white;
+    height:auto;
+    width:300px;
+}
+
+.footer-section a{
+    color:white;
+    text-decoration: none;
+    font-size: 60%;
+    padding:5px;
+    font-weight: 500;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.footer-title{
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.footer-features1{
+    width: 100%;
+    height:200px;
+    background-color: #282828;
+    padding: 30px;
+    
+}
+
+.grid-container-3{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-gap:20px 20px;
+}
+grid-container-2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap:20px 20px; 
+}
+
+grid-container-2-50{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.footer-2{
+    width:100%;
+    height:auto;
+    background-color: #282828;
+}
+
+.address{
+    margin: 25px;
+}
+
+.img-logo{
+    width: 50%;
+    height:auto;
+    padding:20px 0px;
+
+}
+
+.icon{
+    color:white;
+    padding-right:10px;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 5% 40% 55%;
+    grid-gap:10px 10px;
+    
+}
+
+.padding{
+    padding-right:270px;
+}
+
+
+
+
